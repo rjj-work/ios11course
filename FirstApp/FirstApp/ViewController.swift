@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import os
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        print("Why my name, unless I can get it from the OS?")
     }
 
     override func didReceiveMemoryWarning() {
