@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var clickMeLabel: UILabel!
+
+    @IBAction func ButtonPressed(_ sender: Any) {
+        print("GHOST ViewController: ButtonPressed ")
+
+        clickMeLabel.text = "You click the Click Me button"
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
