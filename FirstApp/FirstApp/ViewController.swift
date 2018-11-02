@@ -11,11 +11,15 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var clickMeLabel: UILabel!
+    @IBOutlet weak var textField: UITextField!
 
     @IBAction func ButtonPressed(_ sender: Any) {
         print("GHOST ViewController: ButtonPressed ")
 
-        clickMeLabel.text = "You click the Click Me button"
+//        if textField.text != nil {
+//            clickMeLabel.text = "Hello " + textField.text!
+//        }
+        clickMeLabel.text = "Hello " + (textField.text ?? "nil value, moving on")
     }
 
     override func viewDidLoad() {
