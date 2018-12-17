@@ -12,6 +12,7 @@
 		1417C4AB218BEC29008A2344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1417C4A9218BEC29008A2344 /* Main.storyboard */; };
 		1417C4AD218BEC29008A2344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1417C4AC218BEC29008A2344 /* Assets.xcassets */; };
 		1417C4B0218BEC29008A2344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1417C4AE218BEC29008A2344 /* LaunchScreen.storyboard */; };
+		14B09A3521C7DDFB00A96CEF /* Lensman-GalaticPatrol-audiobook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14B09A3421C7DDFB00A96CEF /* Lensman-GalaticPatrol-audiobook.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1417C4AC218BEC29008A2344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1417C4AF218BEC29008A2344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1417C4B1218BEC29008A2344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B09A3421C7DDFB00A96CEF /* Lensman-GalaticPatrol-audiobook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lensman-GalaticPatrol-audiobook.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				1417C4AC218BEC29008A2344 /* Assets.xcassets */,
 				1417C4AE218BEC29008A2344 /* LaunchScreen.storyboard */,
 				1417C4B1218BEC29008A2344 /* Info.plist */,
+				14B09A3421C7DDFB00A96CEF /* Lensman-GalaticPatrol-audiobook.jpg */,
 			);
 			path = SecondApp;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			files = (
 				1417C4B0218BEC29008A2344 /* LaunchScreen.storyboard in Resources */,
 				1417C4AD218BEC29008A2344 /* Assets.xcassets in Resources */,
+				14B09A3521C7DDFB00A96CEF /* Lensman-GalaticPatrol-audiobook.jpg in Resources */,
 				1417C4AB218BEC29008A2344 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
