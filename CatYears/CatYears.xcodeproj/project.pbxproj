@@ -13,6 +13,7 @@
 		149A496021CA836500666944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 149A495F21CA836500666944 /* Assets.xcassets */; };
 		149A496321CA836500666944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149A496121CA836500666944 /* LaunchScreen.storyboard */; };
 		149A496B21CB2E9200666944 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149A496A21CB2E9200666944 /* Constants.swift */; };
+		149A496D21CC5BBC00666944 /* Lensman-GalaticPatrol-audiobook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 149A496C21CC5BBC00666944 /* Lensman-GalaticPatrol-audiobook.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		149A496221CA836500666944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		149A496421CA836500666944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		149A496A21CB2E9200666944 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		149A496C21CC5BBC00666944 /* Lensman-GalaticPatrol-audiobook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Lensman-GalaticPatrol-audiobook.jpg"; path = "../../SecondApp/SecondApp/SecondApp/Lensman-GalaticPatrol-audiobook.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				149A496121CA836500666944 /* LaunchScreen.storyboard */,
 				149A496421CA836500666944 /* Info.plist */,
 				149A496A21CB2E9200666944 /* Constants.swift */,
+				149A496C21CC5BBC00666944 /* Lensman-GalaticPatrol-audiobook.jpg */,
 			);
 			path = CatYears;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			files = (
 				149A496321CA836500666944 /* LaunchScreen.storyboard in Resources */,
 				149A496021CA836500666944 /* Assets.xcassets in Resources */,
+				149A496D21CC5BBC00666944 /* Lensman-GalaticPatrol-audiobook.jpg in Resources */,
 				149A495E21CA836500666944 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
