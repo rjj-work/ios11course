@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var ageInput: UITextField!
 
-    @IBOutlet weak var ageOutput: UITextField!
+    @IBOutlet weak var computedCatAge: UILabel!
 
     @IBAction func getAgeInCatYears(_ sender: UIButton) {
         // extract data from input
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
             // update output
             //print(String(format: "humageAge: %s, factor: %d, catAge: %d, catAgeStr: %s", ageStr, Factors.HumanYearsToCatYears, catAge, catAgeStr))
 
-            ageOutput.text = catAgeStr
+            computedCatAge.text = catAgeStr
         }
     }
 
