@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         if let ageStr = ageInput.text {
 
             // check if the data is numeric
-            let age = Float(ageStr)
+            let age = Int(ageStr)
             if age == nil {
                 print("value '" + ageStr + "' not a number")
                 return
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
             // multiple by human to cat years factor
             let catAge = age! * Factors.HumanYearsToCatYears
 
-            let catAgeStr = String(format: "%0.0f", catAge)
+            let catAgeStr = String(format: "%d", catAge)
             print("catAgeStr" + catAgeStr)
 
             // update output

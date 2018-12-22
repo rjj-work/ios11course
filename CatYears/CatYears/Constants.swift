@@ -11,6 +11,6 @@ import Foundation
 
 struct Factors {
 
-    static let HumanYearsToCatYears = Float(7)
+    static let HumanYearsToCatYears = Int(7)
 
 }
