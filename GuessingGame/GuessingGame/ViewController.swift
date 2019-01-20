@@ -21,19 +21,22 @@ class ViewController: UIViewController {
     var numGuesses = Int(0)
 
     @IBAction func buttonGuess(_ sender: UIButton) {
+         numGuesses = numGuesses + 1
         // check for a guess
         let g = aGuess.text
+        print("\(String(describing: g)) is the value currently entered.")
+
         if g == nil {
             // No value, so nothing to do
             return
         }
+
         let gVal = UInt32(g!)
         if gVal == nil {
             print("\(String(describing: g)) did not covert to UInit32")
             return
         }
         updateStatus(n: numGuesses, thisGuess: gVal!, checkValue: theValue)
-        numGuesses = numGuesses + 1
     }
 
     override func viewDidLoad() {
