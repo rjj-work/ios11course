@@ -18,47 +18,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aligned V &amp; H" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEN-cP-f0E">
-                                <rect key="frame" x="134.5" y="323" width="106" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is It Prime ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzR-BP-j2L">
+                                <rect key="frame" x="109.5" y="38" width="156.5" height="38.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156.5" id="liz-ZX-Ep8"/>
+                                    <constraint firstAttribute="height" constant="38.5" id="uIB-qM-4sR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aligned to top of screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzR-BP-j2L">
-                                <rect key="frame" x="96" y="38" width="183" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entery Positive Number Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sNr-rf-BEx">
+                                <rect key="frame" x="16" y="161" width="343" height="30"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aligned to label above it" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATm-1t-QAX">
-                                <rect key="frame" x="96" y="80" width="183" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aligned to bottom of screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkz-if-TUd">
-                                <rect key="frame" x="81" y="602" width="213" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVz-eA-fWL">
+                                <rect key="frame" x="108.5" y="214" width="158" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Test for Prime"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecc-Sv-O9K">
+                                <rect key="frame" x="16" y="328" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="11y-qP-C3m"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Hell yeah it's prime !">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="24" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="sNr-rf-BEx" firstAttribute="top" secondItem="hzR-BP-j2L" secondAttribute="bottom" constant="84.5" id="0ck-Ov-JYF"/>
                             <constraint firstItem="hzR-BP-j2L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3YZ-U6-YYy"/>
+                            <constraint firstItem="sVz-eA-fWL" firstAttribute="top" secondItem="sNr-rf-BEx" secondAttribute="bottom" constant="23" id="5es-hp-cXs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ecc-Sv-O9K" secondAttribute="bottom" constant="279" id="88J-SP-zaR"/>
                             <constraint firstItem="hzR-BP-j2L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="IYB-7O-nWR"/>
-                            <constraint firstItem="gkz-if-TUd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ldy-HN-VU3"/>
-                            <constraint firstItem="KEN-cP-f0E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P1R-dw-298"/>
-                            <constraint firstItem="ATm-1t-QAX" firstAttribute="top" secondItem="hzR-BP-j2L" secondAttribute="bottom" constant="21" id="QwB-co-Z9f"/>
-                            <constraint firstItem="ATm-1t-QAX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kmy-ZJ-Fsz"/>
-                            <constraint firstItem="KEN-cP-f0E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wBj-Zg-Lc5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gkz-if-TUd" secondAttribute="bottom" constant="44" id="ywb-kT-Bxv"/>
+                            <constraint firstItem="hzR-BP-j2L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="MDH-Ul-OHX"/>
+                            <constraint firstItem="sNr-rf-BEx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ps8-VE-lQW"/>
+                            <constraint firstItem="ecc-Sv-O9K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c7W-yL-4cx"/>
+                            <constraint firstItem="ecc-Sv-O9K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lRK-G2-6vY"/>
+                            <constraint firstItem="sNr-rf-BEx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="m33-aM-aiy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ecc-Sv-O9K" secondAttribute="trailing" constant="16" id="oAZ-Bz-fxa"/>
+                            <constraint firstItem="sVz-eA-fWL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uHy-WO-Uwq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sNr-rf-BEx" secondAttribute="trailing" constant="16" id="vHr-f2-xQB"/>
+                            <constraint firstItem="ecc-Sv-O9K" firstAttribute="top" secondItem="sVz-eA-fWL" secondAttribute="bottom" constant="117" id="vsl-bh-BwQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
