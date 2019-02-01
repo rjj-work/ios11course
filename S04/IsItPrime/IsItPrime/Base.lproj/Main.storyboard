@@ -38,6 +38,9 @@
                                 <rect key="frame" x="108.5" y="214" width="158" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Test for Prime"/>
+                                <connections>
+                                    <action selector="testForPrimeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tfZ-6r-hjz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecc-Sv-O9K">
                                 <rect key="frame" x="16" y="328" width="343" height="60"/>
@@ -66,6 +69,7 @@
                             <constraint firstItem="hzR-BP-j2L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="MDH-Ul-OHX"/>
                             <constraint firstItem="sNr-rf-BEx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ps8-VE-lQW"/>
                             <constraint firstItem="ecc-Sv-O9K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c7W-yL-4cx"/>
+                            <constraint firstItem="sNr-rf-BEx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kcE-vz-0aT"/>
                             <constraint firstItem="ecc-Sv-O9K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lRK-G2-6vY"/>
                             <constraint firstItem="sNr-rf-BEx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="m33-aM-aiy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ecc-Sv-O9K" secondAttribute="trailing" constant="16" id="oAZ-Bz-fxa"/>
@@ -75,6 +79,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="isPrimeText" destination="ecc-Sv-O9K" id="tWg-oC-EiB"/>
+                        <outlet property="testInput" destination="sNr-rf-BEx" id="izi-B2-2pF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
