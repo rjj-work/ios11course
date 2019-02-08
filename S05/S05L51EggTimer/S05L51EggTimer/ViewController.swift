@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var t = Timer()
+
     @IBOutlet weak var timerDisplay: UILabel!
 
     @IBAction func pauseBtn(_ sender: Any) {
@@ -28,12 +30,14 @@ class ViewController: UIViewController {
    }
 
     @objc func processTimer() {
-
+        timerDisplay.text = "processed timer event"
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        t = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(processTimer), userInfo: nil, repeats: true)
     }
 
 }
