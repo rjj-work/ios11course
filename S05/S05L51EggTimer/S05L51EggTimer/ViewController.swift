@@ -10,27 +10,38 @@ import UIKit
 
 class ViewController: UIViewController {
     var t = Timer()
+    var tState = TimerState()
 
     @IBOutlet weak var timerDisplay: UILabel!
 
     @IBAction func pauseBtn(_ sender: Any) {
-        timerDisplay.text = "pauseBtn"
+        tState.Pause()
+        self.updateDisplay()
     }
     @IBAction func playBtn(_ sender: Any) {
-        timerDisplay.text = "playBtn"
+        tState.Play()
+        self.updateDisplay()
     }
     @IBAction func minus10Btn(_ sender: Any) {
-        timerDisplay.text = "minus10Btn"
+        tState.Dec(d: Int(10))
+        self.updateDisplay()
    }
     @IBAction func plus10Btn(_ sender: Any) {
-        timerDisplay.text = "plus10Btn"
+        tState.Inc(i: Int(10))
+        self.updateDisplay()
    }
     @IBAction func restBtn(_ sender: Any) {
-        timerDisplay.text = "restBtn"
+        tState.Reset()
+        self.updateDisplay()
    }
 
     @objc func processTimer() {
-        timerDisplay.text = "processed timer event"
+        tState.Dec(d:nil)
+        self.updateDisplay()
+    }
+
+    func updateDisplay() {
+        timerDisplay.text = "\(tState.Remaining())"
     }
 
     override func viewDidLoad() {
