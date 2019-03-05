@@ -23,6 +23,13 @@ class ViewController: UIViewController {
         }
         print("after retrieval")
 
+        let arr = [1, 2, 3, 4]
+        UserDefaults.standard.set(arr, forKey: "theArray")
+        let arrObj = UserDefaults.standard.object(forKey: "theArray")
+        if let a = arrObj as! NSArray? {
+            print("theArray: \(a)")
+        }
+
     }
 }
 
